@@ -13,11 +13,11 @@ class ProfileManager extends ChangeNotifier {
       );
 
   bool get didSelectUser => _didSelectUser;
-  bool get didTapOnRaywenderlich => _tapOnRaywenderlich;
+  bool get didTapOnDilektuhafiye => _tapOnDilektuhafiye;
   bool get darkMode => _darkMode;
 
   var _didSelectUser = false;
-  var _tapOnRaywenderlich = false;
+  var _tapOnDilektuhafiye = false;
   var _darkMode = false;
 
   void set darkMode(bool darkMode) {
@@ -25,8 +25,8 @@ class ProfileManager extends ChangeNotifier {
     notifyListeners();
   }
 
-  void tapOnRaywenderlich(bool selected) {
-    _tapOnRaywenderlich = selected;
+  void tapOnDilektuhafiye(bool selected) {
+    _tapOnDilektuhafiye = selected;
     notifyListeners();
   }
 
